@@ -27,7 +27,7 @@ class CreateProject extends Component {
           </div>
           <div className="input-field">
             <label htmlFor="content">Contenido del proyecto</label>
-            <textarea name="content" className="materialize-textarea" onChange={this.handleChange}></textarea>
+            <textarea name="content" id="content" className="materialize-textarea" onChange={this.handleChange}></textarea>
           </div>
           <div className="input-field">
             <button className="btn pink lighten-1 z-depth-0">Crear</button>
