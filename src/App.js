@@ -3,6 +3,8 @@ import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
 import Dashboard from './components/dashboard/Dashboard';
 import ProjectDetails from './components/projects/ProjectDetails'
+import SignedIn from './components/auth/SignedIn';
+import SignedUp from './components/auth/SignedUp';
 function App() {
   return (
     <BrowserRouter>
@@ -13,6 +15,10 @@ function App() {
             component={Dashboard}/>
           <Route path='/project/:id'
             component={ProjectDetails}/>
+          <Route path='/signin'
+            component={SignedIn}/>
+          <Route path='/signup'
+            component={SignedUp}/>            
         </Switch>
       </div>
     </BrowserRouter>
